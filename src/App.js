@@ -6,6 +6,12 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import ChatBox from './components/Floating-Button';
 import Nopage from './pages/No-page';
+import Programs from './pages/Programs';
+import Team from './pages/Team';
+import Blogs from './pages/Blogs';
+import Shop from './pages/Shop';
+import About from './pages/About';
+import Contact from './pages/Contact';
 
 function App() {
   return (
@@ -13,6 +19,12 @@ function App() {
    <Header />
    <Routes>
    <Route exact path="/" element={<Home />} />
+   <Route exact path="/our-programs" element={<Programs />} />
+   <Route exact path="/shopping" element={<Shop />} />
+   <Route exact path="/our-team" element={<Team />} />
+   <Route exact path="/our-blogs" element={<Blogs />} />
+   <Route exact path="/about-us" element={<About />} />
+   <Route exact path="/contact-us" element={<Contact />} />
    <Route exact path="*" element={<Nopage />} />
    </Routes>
    <ChatBox />

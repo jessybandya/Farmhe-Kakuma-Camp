@@ -10,7 +10,7 @@ const ChatBox = () => {
   };
 
   const handleWhatsAppClick = () => {
-    window.open(`https://wa.me/+254742161921`, '_blank');
+    window.open(`https://wa.me/+254700139636`, '_blank');
   };
 
   const handleSMSClick = () => {

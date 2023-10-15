@@ -1874,13 +1874,24 @@ ul.contact-widget-wrapper li i {
     Page-Title-Row
 ------------------------*/
 
-.ttm-page-title-row { 
+.ttm-page-title-row {
     position: relative;
-    background-image: url(../images/ttm-pagetitle-bg.jpg);
+    background-image: url(../media/img/img-2.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
+
+.ttm-page-title-row::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent);
+}
+
 div.ttm-page-title-row > .ttm-bg-layer { background-color: rgba(24,35,51,0.85); }
 .ttm-page-title-row { 
     display: block;

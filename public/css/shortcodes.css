@@ -241,13 +241,13 @@
 .ttm-equal-height-image{ display: none; }
 
 .col-bg-img-one.ttm-col-bgimage-yes .ttm-col-wrapper-bg-layer{
-    background-image: url(../images/bg-image/col-bgimage-1.jpg) !important;
+    background-image: url(../media/img/home/slider-4.png) !important;
     background-position: center center!important;
     background-repeat: no-repeat !important;
     background-size: cover !important;
 }
 .col-bg-img-two.ttm-col-bgimage-yes .ttm-col-wrapper-bg-layer{
-    background-image: url(../images/bg-image/col-bgimage-2.jpg) !important;
+    background-image: url(../media/img/home/slider-2.png) !important;
     background-position: center center!important;
     background-repeat: no-repeat !important;
     background-size: cover !important;

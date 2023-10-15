@@ -1,43 +1,11 @@
 import React from 'react'
+import FavoriteIcon from '@mui/icons-material/Favorite';
 
 function Footer() {
   return (
     <div>
         {/*footer start*/}
         <footer className="footer widget-footer clearfix">
-        <div className="first-footer">
-          <div className="container">
-            <div className="row">
-              <div className="col-lg-4">
-                <div className="cta_wrapper">
-                  <div className="ttm-quicklink-box">
-                    <div className="ttm-leftlink-box">
-                      <h5 className="custom-heading"><a href="#"> <span className="ti ti-arrow-circle-left ttm-arrow-box" /> Find Our Nearest Office</a></h5>
-                      <i className="flaticon flaticon-house ttm-textcolor-skincolor" />
-                    </div>    
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-4">
-                <div className="ttm-custom-ctabox">
-                  <div className="cta-bg-icon"><span className="flaticon-support" /></div>
-                  <h3 className="ttm-cta-heading ttm-textcolor-skincolor">Call Us On</h3>
-                  <h5 className="ttm-cta-content">+254 746 7493 07</h5>
-                </div>
-              </div>
-              <div className="col-lg-4">
-                <div className="cta_wrapper">
-                  <div className="ttm-quicklink-box">
-                    <div className="ttm-rightlink-box">
-                      <i className="flaticon flaticon-clock ttm-textcolor-skincolor" />
-                      <h5 className="custom-heading"><a href="#"> Emergency Restorations <span className="ti ti-arrow-circle-right ttm-arrow-box" /></a></h5>
-                    </div>    
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
         <div className="second-footer ttm-textcolor-white">
           <div className="container">
             <div className="row">
@@ -53,12 +21,12 @@ function Footer() {
                 <div className="widget link-widget clearfix">
                   <h3 className="widget-title">Useful Links</h3>
                   <ul id="menu-footer-services">
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Our Services</a></li>
-                    <li><a href="#">Nomadic Herding</a></li>
-                    <li><a href="#">Veterinary Services</a></li>
-                    <li><a href="#">Commercial Plant</a></li>
-                    <li><a href="#">Farm Labor Management</a></li>
+                    <li><a href="/about-us">About Us</a></li>
+                    <li><a href="/our-programs">Programs</a></li>
+                    <li><a href="/shopping">F.H.E Shop</a></li>
+                    <li><a href="/our-blogs">Our Blogs</a></li>
+                    <li><a href="/our-team">Our Team</a></li>
+                    <li><a href="/our-gallery">Gallery</a></li>
                   </ul>
                 </div>
               </div>
@@ -67,19 +35,19 @@ function Footer() {
                   <h3 className="widget-title">Recent News</h3>
                   <ul className="widget-post ttm-recent-post-list">
                     <li>
-                      <a href="single-blog.html"><img src="images/blog/01.jpg" alt="post-img" /></a>
+                      <a href="#"><img src="/media/img/home/slider-4.png" style={{objectFit:'cover'}} alt="post-img" /></a>
                       <span className="post-date"><i className="fa fa-calendar" />May 01, 2019</span>
-                      <a href="single-blog.html">Outdoor Vintage Flower Garden Decor</a>
+                      <a href="#">Transforming the Desert into a Food Forest With Treebog</a>
                     </li>
                     <li>
-                      <a href="single-blog.html"><img src="images/blog/02.jpg" alt="post-img" /></a>
-                      <span className="post-date"><i className="fa fa-calendar" />May 03, 2019</span>
-                      <a href="single-blog.html">Grow Your Own Yard Garden For Better Life</a>
+                      <a href="#"><img src="/media/img/home/slider-4.png" style={{objectFit:'cover'}} alt="post-img" /></a>
+                      <span className="post-date"><i className="fa fa-calendar" />May 01, 2019</span>
+                      <a href="#">Transforming the Desert into a Food Forest With Treebog</a>
                     </li>
                     <li>
-                      <a href="single-blog.html"><img src="images/blog/03.jpg" alt="post-img" /></a>
-                      <span className="post-date"><i className="fa fa-calendar" />May 05, 2019</span>
-                      <a href="single-blog.html">Rural Infrastructure for Great Agriculture</a>
+                      <a href="#"><img src="/media/img/home/slider-4.png" style={{objectFit:'cover'}} alt="post-img" /></a>
+                      <span className="post-date"><i className="fa fa-calendar" />May 01, 2019</span>
+                      <a href="#">Transforming the Desert into a Food Forest With Treebog</a>
                     </li>
                   </ul>
                 </div>
@@ -88,9 +56,9 @@ function Footer() {
                 <div className="widget contact-widget">
                   <h3 className="widget-title">Get in touch</h3>      
                   <ul className="contact-widget-wrapper">
-                    <li><i className="fa fa-map-marker" />University Way <br /> Nairobi Kenya</li>
-                    <li><i className="fa fa-phone" />(+254) 746 749 307 </li>
-                    <li><i className="fa fa-envelope-o" /><a href="mailto:jessy.bandya5@gmail.com" target="_blank">jessy.bandya5@gmail.com</a></li>
+                    <li><i className="fa fa-map-marker" />Kakuma Refugee Camp K2, Z1, B9 Behind IOM Office<br /> Turkana Kenya</li>
+                    <li><i className="fa fa-phone" /><a href='tel:+254700139636'>+254 700 139636</a> </li>
+                    <li><i className="fa fa-envelope-o" /><a href="mailto:marcelinmunga19@gmail.com" target="_blank">marcelinmunga19@gmail.com</a></li>
                   </ul>
                   <div className="social-icons circle social-hover">
                     <ul className="list-inline">
@@ -109,7 +77,7 @@ function Footer() {
             <div className="row copyright">
               <div className="col-md-12">
                 <div className="text-center">
-                  <span>Copyright &copy; {new Date().getFullYear()}&nbsp; Made With Love by <a style={{fontWeight:'bold'}} href="https://jessy-bandya.web.app/" target="_blank">Jessy Bandya</a></span>
+                  <span>Copyright &copy; {new Date().getFullYear()}&nbsp; Made With <FavoriteIcon style={{color:'green'}}/> by <a style={{fontWeight:'bold'}} href="https://jessy-bandya.web.app/" target="_blank">Jessy Bandya</a></span>
                 </div>
               </div>
             </div>

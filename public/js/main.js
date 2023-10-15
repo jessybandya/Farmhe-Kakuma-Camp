@@ -322,8 +322,7 @@ jQuery("a[data-gal^='prettyPhoto']").prettyPhoto({hook: 'data-gal'})
         infinite: true,
         arrows: false,
         dots: false,                   
-        autoplay: true,
-        
+        autoplay: true,       
 
         responsive: [{
 
