@@ -321,13 +321,23 @@ const logout = () => {
           color="blue-gray"
           className="flex items-center gap-1 rounded-full py-0.5 pr-2 pl-0.5 lg:ml-auto"
         >
+        {authId === "aIYZY1R1kdXUmMc1P1PrWSwIhqB2" ?(
           <Avatar
             variant="circular"
             size="sm"
-            alt='Jessy'
+            alt='Admin'
+            className="border border-green-900 p-0.5"
+            src="https://avatars.githubusercontent.com/u/69303168?v=4"
+          />
+        ):(
+          <Avatar
+            variant="circular"
+            size="sm"
+            alt={currentUser?.firstName}
             className="border border-green-900 p-0.5"
             src={currentUser?.profilePhoto}
           />
+        )}
           <ChevronDownIcon
             strokeWidth={2.5}
             className={`h-3 w-3 transition-transform ${
@@ -359,28 +369,51 @@ const logout = () => {
     </Badge>
 
     <Button onClick={handleOpenQuote} variant="outlined" style={{color:'green', border: '1px solid green'}}>
-    Get Quote    
+    Quote    
     </Button>
         <MenuList className="p-1">
           {authId ?(
            <>
-           <MenuItem
-           onClick={() => setIsMenuOpen(false)}
-           style={{ display: "flex", alignItems: "center" }}
-         >
-           <span>
-             <UserCircleIcon className="h-4 w-4" />
-           </span>
-           <Typography
-             as="span"
-             variant="small"
-             className="font-normal"
-             color="inherit"
-             style={{ marginLeft: "5px" }}
-           >
-             {currentUser?.firstName} {currentUser?.lastName} 
-           </Typography>
-         </MenuItem>
+           {authId === "aIYZY1R1kdXUmMc1P1PrWSwIhqB2" ?(
+            <a href="/admin-page">
+            <MenuItem
+            onClick={() => setIsMenuOpen(false)}
+            style={{ display: "flex", alignItems: "center" }}
+          >
+          <span>
+          <UserCircleIcon className="h-4 w-4" />
+        </span>
+        <Typography
+          as="span"
+          variant="small"
+          className="font-normal"
+          color="inherit"
+          style={{ marginLeft: "5px" }}
+        >
+          Admin Page 
+        </Typography>
+          </MenuItem>
+          </a>
+           ):(
+            <MenuItem
+            onClick={() => setIsMenuOpen(false)}
+            style={{ display: "flex", alignItems: "center" }}
+          >
+            <span>
+              <UserCircleIcon className="h-4 w-4" />
+            </span>
+            <Typography
+              as="span"
+              variant="small"
+              className="font-normal"
+              color="inherit"
+              style={{ marginLeft: "5px" }}
+            >
+              {currentUser?.firstName} {currentUser?.lastName} 
+            </Typography>
+          </MenuItem>
+           )}
+
 
            <MenuItem
            onClick={logout}
@@ -402,21 +435,45 @@ const logout = () => {
            </>
           ):(
             <>
+            <a href="/login">
             <MenuItem
-            className="flex items-center gap-2 rounded "
-            >
-            <Button fullWidth style={{backgroundColor:'green', width:'100%'}}>
-            <a href="/login">Login</a>
-            </Button>
-            </MenuItem>
+            onClick={() => setIsMenuOpen(false)}
+            style={{ display: "flex", alignItems: "center" }}
+          >
+          <span>
+          <UserCircleIcon className="h-4 w-4" />
+        </span>
+        <Typography
+          as="span"
+          variant="small"
+          className="font-normal"
+          color="inherit"
+          style={{ marginLeft: "5px" }}
+        >
+          Login Page
+        </Typography>
+          </MenuItem>
+          </a>
 
-            <MenuItem
-            className="flex items-center gap-2 rounded "
-            >
-            <Button fullWidth style={{backgroundColor:'green'}}>
-            <a href="/register">Register</a>
-            </Button>
-            </MenuItem>
+          <a href="/register">
+          <MenuItem
+          onClick={() => setIsMenuOpen(false)}
+          style={{ display: "flex", alignItems: "center" }}
+        >
+        <span>
+        <UserCircleIcon className="h-4 w-4" />
+      </span>
+      <Typography
+        as="span"
+        variant="small"
+        className="font-normal"
+        color="inherit"
+        style={{ marginLeft: "5px" }}
+      >
+        Register Page
+      </Typography>
+        </MenuItem>
+        </a>
             </>
           )}
         </MenuList>
