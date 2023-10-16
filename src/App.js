@@ -12,6 +12,8 @@ import Blogs from './pages/Blogs';
 import Shop from './pages/Shop';
 import About from './pages/About';
 import Contact from './pages/Contact';
+import Register from './pages/Register';
+import Login from './pages/Login';
 
 function App() {
   return (
@@ -25,6 +27,8 @@ function App() {
    <Route exact path="/our-blogs" element={<Blogs />} />
    <Route exact path="/about-us" element={<About />} />
    <Route exact path="/contact-us" element={<Contact />} />
+   <Route exact path="/register" element={<Register />} />
+   <Route exact path="/login" element={<Login />} />
    <Route exact path="*" element={<Nopage />} />
    </Routes>
    <ChatBox />

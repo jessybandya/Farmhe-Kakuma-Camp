@@ -35,6 +35,63 @@ function About() {
                   <div className="ttm_single_image-wrapper after-border style2 position-relative ml-20">
                     <img className="img-fluid border-12px-solid white-border" src="/media/img/img-3.jpg" title="single-img-five" alt="single-img-five" />
                   </div>{/* ttm_single_image-wrapper end */}
+                  <div className='about-section-1'>
+                  <div className="row ttm-bgcolor-white align-items-center mt-30">
+                  <div className="col-md-4 col-lg-4">
+                    {/*ttm-fid*/}
+                    <div className="ttm-fid inside without-icon style1">
+                      <div className="ttm-fid-contents text-center">{/*ttm-fid-contents*/}
+                        <h4 className="ttm-fid-inner">
+                          <span data-appear-animation="animateDigits" data-from={0} data-to={10} data-interval={2} data-before data-before-style="sup" data-after="+" data-after-style="sub">10</span><span className="ml-5">+</span>
+                        </h4>
+                        <h3 className="ttm-fid-title">Our Team</h3>{/*ttm-fid-title*/}
+                      </div>
+                    </div>{/* ttm-fid end*/}
+                  </div>
+                  <div className="col-md-4 col-lg-4">
+                    {/*ttm-fid*/}
+                    <div className="ttm-fid inside  without-icon style1">
+                      <div className="ttm-fid-contents text-center">{/*ttm-fid-contents*/}
+                        <h4 className="ttm-fid-inner">
+                          <span data-appear-animation="animateDigits" data-from={0} data-to={100} data-interval={2} data-before data-before-style="sup" data-after="+" data-after-style="sub">100</span><span className="ml-5">+</span>
+                        </h4>
+                        <h3 className="ttm-fid-title">Our Clients</h3>{/*ttm-fid-title*/}
+                      </div>
+                    </div>{/* ttm-fid end*/}
+                  </div>
+                  <div className="col-md-4 col-lg-4">
+                    {/*ttm-fid*/}
+                    <div className="ttm-fid inside without-icon style1">
+                      <div className="ttm-fid-contents text-center">{/*ttm-fid-contents*/}
+                        <h4 className="ttm-fid-inner">
+                          <span data-appear-animation="animateDigits" data-from={0} data-to={10} data-interval={2} data-before data-before-style="sup" data-after="+" data-after-style="sub">10</span><span className="ml-5">+</span>
+                        </h4>
+                        <h3 className="ttm-fid-title">Our Brand</h3>{/*ttm-fid-title*/}
+                      </div>
+                    </div>{/* ttm-fid end*/}
+                  </div>
+                </div>
+                <div className="row mt-30">
+                  <div className="col-md-4 col-lg-4 col-sm-4">
+                    <div className="text-left pt-15">
+                      <img src="images/about-sign.png" alt="about-sign" />
+                    </div>
+                  </div>
+                  <div className="col-md-8 col-lg-8 col-sm-8">
+                    {/*  featured-icon-box */} 
+                    <div className="featured-icon-box without-icon style1 text-left pt-15">
+                      <div className="featured-content">{/*  featured-content */}
+                        <div className="featured-desc">{/*  featured-desc */}
+                          <p>Call to ask any question</p>
+                        </div>
+                        <div className="featured-title">{/*  featured-title */}
+                          <h5>+254 700 139636</h5>
+                        </div>
+                      </div>
+                    </div>{/*  featured-icon-box END */}
+                  </div>
+                </div>
+                  </div>
                 </div>
                 <div className="col-lg-6">
                   <div className="res-991-mt-50">
@@ -53,65 +110,45 @@ function About() {
                     <p>FHE is a community based organization, stands for Farming and Health Education. The organization was initiated on 24th june 2018 Kakuma refugees camp, Turkana country, Kenya. We’re governed by the present status and secondary by articles 38 of the Kenya constitution and respect other international, national organization, registered in Turkana West of Kenya through CC/TRKW/CBO/HC 5819 certificate no 04124, operating in kakuma refugee camp and leading by youth refugee. As refugee initiative it is article 15* freedom of association.</p>
                     <p>We’re a community-based organization that deals with permaculture projects and agroforestry and Sarafu (community Currency) in Kakuma refugee camp with the aim of eradicating hunger in Kakuma refugee camp. Although LWF and WORLD VISION are also helping the Refugees by doing the provision of food but we still have more than 5,000 malnutrition children and malnourished, pregnant mothers who are more affected in Kakuma refugee camp.</p>
                     <p>Due to this, the Farming and Healthy Education Refugee led organization is working with projects to fill this gap by teaching and growing our own fresh food in Kakuma refugee camp! We also offer counselling program, HIV testing, food processing, logistic management, Refugee Language ongoing, Yoga and hygiene and sanitation practise training.</p>
-                    <div className="row ttm-bgcolor-white align-items-center mt-30">
-                      <div className="col-md-4 col-lg-4">
-                        {/*ttm-fid*/}
-                        <div className="ttm-fid inside without-icon style1">
-                          <div className="ttm-fid-contents text-center">{/*ttm-fid-contents*/}
-                            <h4 className="ttm-fid-inner">
-                              <span data-appear-animation="animateDigits" data-from={0} data-to={10} data-interval={2} data-before data-before-style="sup" data-after="+" data-after-style="sub">10</span><span className="ml-5">+</span>
-                            </h4>
-                            <h3 className="ttm-fid-title">Our Team</h3>{/*ttm-fid-title*/}
-                          </div>
-                        </div>{/* ttm-fid end*/}
-                      </div>
-                      <div className="col-md-4 col-lg-4">
-                        {/*ttm-fid*/}
-                        <div className="ttm-fid inside  without-icon style1">
-                          <div className="ttm-fid-contents text-center">{/*ttm-fid-contents*/}
-                            <h4 className="ttm-fid-inner">
-                              <span data-appear-animation="animateDigits" data-from={0} data-to={100} data-interval={2} data-before data-before-style="sup" data-after="+" data-after-style="sub">100</span><span className="ml-5">+</span>
-                            </h4>
-                            <h3 className="ttm-fid-title">Our Clients</h3>{/*ttm-fid-title*/}
-                          </div>
-                        </div>{/* ttm-fid end*/}
-                      </div>
-                      <div className="col-md-4 col-lg-4">
-                        {/*ttm-fid*/}
-                        <div className="ttm-fid inside without-icon style1">
-                          <div className="ttm-fid-contents text-center">{/*ttm-fid-contents*/}
-                            <h4 className="ttm-fid-inner">
-                              <span data-appear-animation="animateDigits" data-from={0} data-to={10} data-interval={2} data-before data-before-style="sup" data-after="+" data-after-style="sub">10</span><span className="ml-5">+</span>
-                            </h4>
-                            <h3 className="ttm-fid-title">Our Brand</h3>{/*ttm-fid-title*/}
-                          </div>
-                        </div>{/* ttm-fid end*/}
-                      </div>
-                    </div>
-                    <div className="row mt-30">
-                      <div className="col-md-4 col-lg-4 col-sm-4">
-                        <div className="text-left pt-15">
-                          <img src="images/about-sign.png" alt="about-sign" />
+                    <div className="row ttm-bgcolor-white mt-30 about-section-2">
+                    <div className="col-md-4 col-lg-4">
+                      {/*ttm-fid*/}
+                      <div className="ttm-fid inside without-icon style1">
+                        <div className="ttm-fid-contents text-center">{/*ttm-fid-contents*/}
+                          <h4 className="ttm-fid-inner">
+                            <span data-appear-animation="animateDigits" data-from={0} data-to={10} data-interval={2} data-before data-before-style="sup" data-after="+" data-after-style="sub">10</span><span className="ml-5">+</span>
+                          </h4>
+                          <h3 className="ttm-fid-title">Our Team</h3>{/*ttm-fid-title*/}
                         </div>
-                      </div>
-                      <div className="col-md-8 col-lg-8 col-sm-8">
-                        {/*  featured-icon-box */} 
-                        <div className="featured-icon-box without-icon style1 text-left pt-15">
-                          <div className="featured-content">{/*  featured-content */}
-                            <div className="featured-desc">{/*  featured-desc */}
-                              <p>Call to ask any question</p>
-                            </div>
-                            <div className="featured-title">{/*  featured-title */}
-                              <h5>+254 700 139636</h5>
-                            </div>
-                          </div>
-                        </div>{/*  featured-icon-box END */}
-                      </div>
+                      </div>{/* ttm-fid end*/}
+                    </div>
+                    <div className="col-md-4 col-lg-4">
+                      {/*ttm-fid*/}
+                      <div className="ttm-fid inside  without-icon style1">
+                        <div className="ttm-fid-contents text-center">{/*ttm-fid-contents*/}
+                          <h4 className="ttm-fid-inner">
+                            <span data-appear-animation="animateDigits" data-from={0} data-to={100} data-interval={2} data-before data-before-style="sup" data-after="+" data-after-style="sub">100</span><span className="ml-5">+</span>
+                          </h4>
+                          <h3 className="ttm-fid-title">Our Clients</h3>{/*ttm-fid-title*/}
+                        </div>
+                      </div>{/* ttm-fid end*/}
+                    </div>
+                    <div className="col-md-4 col-lg-4">
+                      {/*ttm-fid*/}
+                      <div className="ttm-fid inside without-icon style1">
+                        <div className="ttm-fid-contents text-center">{/*ttm-fid-contents*/}
+                          <h4 className="ttm-fid-inner">
+                            <span data-appear-animation="animateDigits" data-from={0} data-to={10} data-interval={2} data-before data-before-style="sup" data-after="+" data-after-style="sub">10</span><span className="ml-5">+</span>
+                          </h4>
+                          <h3 className="ttm-fid-title">Our Brand</h3>{/*ttm-fid-title*/}
+                        </div>
+                      </div>{/* ttm-fid end*/}
+                    </div>
+                  </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
           </section>
           {/* aboutus-section end */}
           {/* progress-section */}

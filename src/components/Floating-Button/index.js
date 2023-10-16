@@ -1,5 +1,9 @@
 import React, { useState } from 'react';
 import './styles.css';
+import ChatBubbleIcon from '@mui/icons-material/ChatBubble';
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+import SmsIcon from '@mui/icons-material/Sms';
+import PhoneInTalkIcon from '@mui/icons-material/PhoneInTalk';
 
 
 const ChatBox = () => {
@@ -24,19 +28,19 @@ const ChatBox = () => {
   return (
     <div className={`floating-button${isOpen ? ' active' : ''}`} onClick={handleToggle}>
       <div className="chat-icon">
-        <i className="fa fa-comment"></i>
+        <ChatBubbleIcon />
       </div>
       {isOpen && (
         <div className="chat-box">
           <div className="chat-options">
             <button className="whatsapp" onClick={handleWhatsAppClick}>
-              <i className="fa fa-whatsapp"></i>
+              <WhatsAppIcon />
             </button>
             <button className="sms" onClick={handleSMSClick}>
-              <i className="fa fa-comment"></i>
+              <SmsIcon />
             </button>
             <button className="call" onClick={handleCallClick}>
-              <i className="fa fa-phone"></i>
+              <PhoneInTalkIcon />
             </button>
           </div>
         </div>
